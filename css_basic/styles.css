@@ -1,29 +1,75 @@
+/* Logo styling */
+.logo {
+    font-size: 2.5rem;
+    color: #ff4500; /* bright orange */
+    padding-right: 15px;
+    user-select: none;
+}
+
+/* Header navigation styles */
+header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #222;
+    margin: 0;
+}
+
+header ul li {
+    margin-right: 20px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header ul li a:hover {
+    color: #ff6347; /* tomato color on hover */
+}
+
+/* Body & article styling */
 body {
-  display: flex;          /* Make body a flex container */
-  flex-direction: column; /* Stack children vertically */
-  height: 100vh;          /* Make body fill full viewport height */
-  margin: 0;              /* Remove default margin for consistency */
+    background-color: #f9fafb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
-main {
-  display: flex;       /* Make main a flex container */
-  flex-direction: row; /* Arrange children horizontally */
-  flex: auto;          /* Allow main to grow/shrink automatically */
-  height: auto;        /* Keep automatic height */
-  width: 100%;         /* Take full width */
-}
+
 article {
-  flex: 2;          /* Take 2 parts of the available space */
-  overflow-y: auto; /* Enable vertical scrolling if needed */
-  padding: 10px;    /* Optional: add some padding for readability */
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow-y: auto;
 }
 
 aside {
-  flex: 1;          /* Take 1 part of the available space */
-  overflow-y: auto; /* Enable vertical scrolling if needed */
-  padding: 10px;    /* Optional padding */
+    background-color: #f3f4f6;
+    padding: 15px 20px;
+    border-radius: 10px;
+    overflow-y: auto;
+    color: #666;
 }
-header, footer {
-  padding: 10px;
-  background-color: #f0f0f0;
-  text-align: center;
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 15px 10px;
+    background-color: #222;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #ff6347;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
