@@ -1,0 +1,29 @@
+body {
+  display: flex;          /* Make body a flex container */
+  flex-direction: column; /* Stack children vertically */
+  height: 100vh;          /* Make body fill full viewport height */
+  margin: 0;              /* Remove default margin for consistency */
+}
+main {
+  display: flex;       /* Make main a flex container */
+  flex-direction: row; /* Arrange children horizontally */
+  flex: auto;          /* Allow main to grow/shrink automatically */
+  height: auto;        /* Keep automatic height */
+  width: 100%;         /* Take full width */
+}
+article {
+  flex: 2;          /* Take 2 parts of the available space */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+  padding: 10px;    /* Optional: add some padding for readability */
+}
+
+aside {
+  flex: 1;          /* Take 1 part of the available space */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+  padding: 10px;    /* Optional padding */
+}
+header, footer {
+  padding: 10px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
