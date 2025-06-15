@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #635aeb;
     color: #fff;
     padding: 1rem 0;
 }
@@ -58,12 +58,12 @@ main section {
 main section h1, main section h2 {
     text-align: center;
     margin-bottom: 1rem;
-    color: #4CAF50;
+    color: #9798eb;
 }
 
 button {
     display: inline-block;
-    background-color: #4CAF50;
+    background-color: #abbbe6;
     color: #fff;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -73,7 +73,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #79a1eb;
 }
 
 footer {
@@ -94,7 +94,7 @@ footer div i {
 }
 
 footer div i:hover {
-    color: #4CAF50;
+    color: #070f57;
 }
 
 footer p {
