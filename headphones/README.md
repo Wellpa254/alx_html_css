@@ -63,3 +63,21 @@ The design files used as reference are provided for desktop, tablet, and mobile 
 1. Clone this repository:
    ```bash
    git clone https://github.com/Wellpa254/alx_html_css.git
+cd alx_html_css/headphones
+Open index.html in any modern web browser.
+
+Notes on Implementation
+CSS Styling:
+
+The design is implemented using flexbox and grid layout techniques.
+
+Custom properties (CSS variables) were used for consistent theming.
+
+Responsive Design:
+
+Media queries were used to ensure smooth transitions between screen sizes.
+
+License
+This project is open-source and available under the MIT License.
+
+Feel free to modify and build upon this project!
