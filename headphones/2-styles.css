@@ -1,0 +1,132 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+/* What We Do Section */
+.what-we-do {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.what-we-do h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.what-we-do p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature {
+    text-align: center;
+    flex: 1 1 200px;
+    max-width: 250px;
+}
+
+.feature img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.feature h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #FF6565;
+}
+
+.feature p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        max-width: 100%;
+    }
+}
+/* Results Section */
+.results {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1e1b46;
+    color: #fff;
+}
+
+.results h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.results p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.stat {
+    text-align: center;
+    flex: 1 1 200px;
+    max-width: 200px;
+    background-color: #FF6565;
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.stat-icon {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.stat p {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat {
+        max-width: 100%;
+    }
+}
