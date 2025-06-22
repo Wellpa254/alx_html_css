@@ -1,0 +1,245 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+/* What We Do Section */
+.what-we-do {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.what-we-do h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.what-we-do p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature {
+    text-align: center;
+    flex: 1 1 200px;
+    max-width: 250px;
+}
+
+.feature img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.feature h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #FF6565;
+}
+
+.feature p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Responsive Design for Features Section */
+@media (max-width: 480px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        max-width: 100%;
+    }
+}
+
+/* Results Section */
+.results {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1e1b46;
+    color: #fff;
+}
+
+.results h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.results p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+/* Stats Container */
+.stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the pentagons horizontally */
+    gap: 20px; /* Adds space between pentagons */
+    margin-top: 40px;
+}
+
+/* Individual Stat Block */
+.stat {
+    text-align: center;
+    flex: 1 1 200px;
+    max-width: 250px;
+    color: #fff;
+    margin: 10px;
+}
+
+/* Pentagon Shape */
+.pentagon {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #FF6565; /* Pentagon color */
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 10px; /* Centers the pentagon */
+}
+
+/* Centered Text Inside Pentagon */
+.pentagon span {
+    position: absolute;
+    text-align: center;
+    transform: translateY(10%); /* Adjusts vertical alignment */
+}
+
+/* Responsive Design for Stats Section */
+@media (max-width: 480px) {
+    .stats-container {
+        flex-direction: column; /* Stacks pentagons vertically */
+        align-items: center;
+    }
+
+    .pentagon {
+        width: 80px; /* Reduces pentagon size */
+        height: 80px;
+        font-size: 1.2rem; /* Adjusts text size */
+    }
+
+    .pentagon span {
+        font-size: 1rem; /* Adjusts font size for smaller screens */
+    }
+}
+
+/* Contact Us Section */
+.contact {
+    text-align: center;
+    padding: 60px 30px;
+    background-color: #dfc6c6;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #1e1b46;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 20px;
+    font-size: 1rem;
+    border: 1px solid #c7a5a5;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #FF6565;
+    color: #d1b7b7;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.cta-button:hover {
+    opacity: 0.9;
+    transform: scale(1.05); /* Adds a slight scaling effect */
+}
+
+/* Footer Section */
+.footer {
+    background-color: #1e1b46;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease;
+}
+
+.social-link img:hover {
+    transform: scale(1.2); /* Enlarges icons on hover */
+}

@@ -1,0 +1,306 @@
+/* Heartbeat Animation */
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.2); /* Expands slightly */
+    }
+    50% {
+        transform: scale(1); /* Returns to original size */
+    }
+    75% {
+        transform: scale(1.2); /* Expands slightly again */
+    }
+    100% {
+        transform: scale(1); /* Back to original size */
+    }
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+/* Scaling Animation */
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Opacity Fade Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* What We Do Section */
+.what-we-do {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.what-we-do h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out; /* Adds fade-in animation to the header */
+}
+
+.what-we-do p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    color: #666;
+    animation: fadeIn 2s ease-in-out; /* Adds fade-in animation to the paragraph */
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    animation: fadeIn 2s ease-in-out; /* Animates the entire feature section */
+}
+
+.feature {
+    text-align: center;
+    flex: 1 1 200px;
+    max-width: 250px;
+    transition: transform 0.4s ease; /* Smooth scaling effect on hover */
+}
+
+.feature:hover {
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+.feature img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.feature h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #FF6565;
+    animation: fadeIn 1s ease-in-out; /* Adds fade-in animation */
+}
+
+.feature p {
+    font-size: 0.9rem;
+    color: #666;
+    animation: fadeIn 1.5s ease-in-out; /* Adds fade-in animation with delay */
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        max-width: 100%;
+    }
+}
+
+/* Results Section */
+.results {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1e1b46;
+    color: #fff;
+}
+
+.results h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out; /* Fade-in effect */
+}
+
+.results p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    color: #ccc;
+    animation: fadeIn 2.5s ease-in-out; /* Delayed fade-in */
+}
+
+/* Hexagon Stats Container */
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the hexagons horizontally */
+    align-items: center;    /* Centers the hexagons vertically */
+    gap: 20px;              /* Adds space between hexagons */
+    margin: 0 auto;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out; /* Fade-in for the stats section */
+}
+
+/* Individual Stat */
+.stat {
+    text-align: center;
+    flex: 1 1 200px;
+    max-width: 200px;
+    color: #fff;
+    margin: 10px;
+    font-size: 1rem;
+    transition: transform 0.4s ease; /* Smooth hover animation */
+}
+
+.stat:hover {
+    transform: scale(1.1); /* Scales up when hovered */
+}
+
+/* Hexagon Shape */
+.stat-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #FF6565;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    margin: 0 auto 10px; /* Centers the hexagon in its parent */
+    animation: heartbeat 2s infinite ease-in-out; /* Heartbeat animation */
+}
+
+/* Text Under Hexagon */
+.stat p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Responsive Design for Stats */
+@media (max-width: 480px) {
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat {
+        max-width: 100%;
+    }
+
+    .stat-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 1.2rem;
+    }
+}
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Styles */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #1e1b46;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FF6565;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: transform 0.3s;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .nav-links {
+        display: none; /* Hide links by default */
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #1e1b46;
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show links when active */
+    }
+
+    .hamburger-menu {
+        display: flex; /* Show hamburger menu on small screens */
+    }
+
+    .hamburger-menu.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-menu.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
